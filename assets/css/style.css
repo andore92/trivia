@@ -1,0 +1,20 @@
+body {
+	background-image: url("images/comic.jpg") ;
+	font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+	font-style: normal;
+	font-variant: normal;
+}
+
+p {
+	font-size: 24px;
+}
+
+form {
+	font-size: 20px;
+}
+
+.startButton, .submitButton, .quizQuestion:hover {
+	cursor: pointer;
+	
+}
+
