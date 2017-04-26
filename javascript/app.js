@@ -72,7 +72,7 @@
 			// reload the page so user can try the game again
 			$(".submitButton").on("click", function(){
 				$(".resultsContainer").html("<p>" + "Good Luck!" + "</p>")
-				location.reload();
+				location.reload().delay;
 				
 			});
 
