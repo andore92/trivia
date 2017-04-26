@@ -42,13 +42,15 @@
     }
 	
 	function submit(){
-		// stops clock to prevent timeLeft from reaching zero and
-		// bugging out the game
+		// calls stop function to stop clock to prevent 
+		// timeLeft from reaching zero and bugging out the game
 		stop()
 
 		// defines variable used to track correct answers
 		var correctAnswer = 0;
-
+			// loops over the radio elements based on question number
+			// if correct value radio element is selected, increments
+			// correct answer variable
 			for(var i = 1; i <= 4; i++) {
   				var radios = document.getElementsByName("question" + i);
   				for(var j = 0; j < radios.length; j++) {
@@ -59,13 +61,17 @@
   				}
 			}	
 			
-			
+			// removes question section and writes the results of their
+			// performance to the html
 			$(".resultsContainer").html("<p>" + "Correct Responses: " + correctAnswer + " out of 4"+ "</p>")
 			
+			// changes the "submit" buton to a "try again?" button
 			$(".submitButton").attr("src", "assets/images/retry.png") 
 			
+			// when the "new" submit button is clicked, it will now reload
+			// reload the page so user can try the game again
 			$(".submitButton").on("click", function(){
-				
+				$(".resultsContainer").html("<p>" + "Good Luck!" + "</p>")
 				location.reload();
 				
 			});
