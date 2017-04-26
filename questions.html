@@ -20,71 +20,103 @@
 		</div><!-- close row -->
 		
 		<br><br>
-		
+	<!-- Results Container is so I can write out -->
+	<!-- all html elements of the quiz to -->
+	<!-- display the users results -->
+	<div class="resultsContainer text-center">
+
 		<!-- Timer -->
 
-		<br><br>
+		<div class="timer text-center"></div>
 
+		<br><br>
+	
 		<!-- Question and Answer Section -->
-		<div class="row questionOne">
+		<div class="row">
 			<div class= "col-lg-12 text-center">
-				<p> Who are Spider-man's Parents?</p>
+				<p> Who are Spider-man's Parents? </p>
 				<form>
-		  			<input type="radio" value = "RichardAndMary"> Richard and Mary
-		  			<input type="radio" value = "BenAndMay"> Ben and May
-		  			<input type="radio" value = "ThomasAndMartha"> Thomas and Martha
+		  			<input type="radio" name = "question1" value = "correct"> Richard and Mary
+		  			<input type="radio" name = "question1" value = "wrong"> Ben and May
+		  			<input type="radio" name = "question1" value = "wrong"> Thomas and Martha
 				</form>
 			</div><!-- close col -->
 		</div><!-- close row -->
 		
 		<br><br>
 		
-		<div class="row questionTwo">
+		<div class="row ">
 			<div class= "col-lg-12 text-center">
-				<p> What is Wolverine's real name?</p>
+				<p> What is Wolverine's real name? </p>
 				<form>
-		  			<input type="radio" value = "Logan"> Logan
-		  			<input type="radio" value = "JamesHowlett"> James Howlett
-		  			<input type="radio" value = "ScottSummers"> Scott Summers
+		  			<input type="radio" name= "question2" value = "wrong"> Logan
+		  			<input type="radio" name= "question2" value = "correct"> James Howlett
+		  			<input type="radio" name= "question2" value = "wrong"> Scott Summers
 				</form>
 			</div><!-- close col -->
 		</div><!-- close row -->
 		
 		<br><br>
 		
-		<div class="row questionThree">
+		<div class="row">
 			<div class= "col-lg-12 text-center">
 				<p> The Human Torch is an original member of which team?</p>
 				<form>
-		  			<input type="radio" value = "FantasticFour"> The Fantastic Four
-		  			<input type="radio" value = "Avengers"> The Avengers
-		  			<input type="radio" value = "XMen"> The X-Men
+		  			<input type="radio" name= "question3" value = "correct"> The Fantastic Four
+		  			<input type="radio" name= "question3" value = "wrong"> The Avengers
+		  			<input type="radio" name= "question" value = "wrong"> The X-Men
 				</form>
 			</div><!-- close col -->
 		</div><!-- close row -->
 		
 		<br><br>
 		
-		<div class="row questionFour">
+		<div class="row">
 			<div class= "col-lg-12 text-center">
-				<p> What is the original company name of Marvel Comics?</p>
+				<p> What is the original company name of Marvel Comics? </p>
 				<form>
-		  			<input type="radio" value = "Timely"> Timely Publications
-		  			<input type="radio" value = "Atlas"> Atlas Comics
-		  			<input type="radio" value = "Marvel"> Marvel Entertainment
+		  			<input type="radio" name="queston4" value = "wrong"> Marvel Entertainment
+		  			<input type="radio" name="question4" value = "wrong"> Atlas Comics
+		  			<input type="radio" name="question4" value = "correct"> Timely Publications
 				</form>
 			</div><!-- close col -->
 		</div><!-- close row -->
-		
+	</div>
+
 		<br><br>
-		
+	
 		<!-- submit button -->
 		<div class="row">
 			<div class="col-lg-12 text-center">
 				<img class= "submitButton" src="assets/images/Submit.png" alt="submit button">
 			</div><!-- closee col -->
 		</div><!-- close row -->
+	
+
+		<br><br>
+	
+		<!-- Results go here -->
+			<div class = "row">
+				<div class="col-lg-12 text-center">
+					<div class="results"></div>
+				</div>
+		
+		<br><br>
+
+		<!-- Retry Button -->
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<div class="retryButton"></div>
+			</div><!-- close col -->
+		</div><!-- close row -->
+	
 	</div><!-- close panel body -->
+	
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="javascript/app.js"></script>
+
 </div><!-- close container -->
 </body>
 </html>
